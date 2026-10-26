@@ -1,2 +1,4 @@
 TASK 1
+PROMT 1:
+I'm building a simple Image-to-Text web app with plain HTML, CSS and JavaScript (index.html, style.css, main.js). Create only the basic page: a title, a file input to select an image, an empty area for an image preview, a "Describe Image" button, and an empty area for the result. Don't add any JavaScript logic yet.
 TASK 2

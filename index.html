@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image to Text</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <h1>Image to Text</h1>
+
+      <section class="image-section" aria-labelledby="image-label">
+        <h2 id="image-label">Choose an image</h2>
+        <input id="image-input" type="file" accept="image/*" />
+        <div class="preview-area" aria-label="Image preview area"></div>
+      </section>
+
+      <button type="button">Describe Image</button>
+
+      <section class="result-section" aria-labelledby="result-label">
+        <h2 id="result-label">Description</h2>
+        <div class="result-area" aria-label="Description result area"></div>
+      </section>
+    </main>
+  </body>
+</html>
