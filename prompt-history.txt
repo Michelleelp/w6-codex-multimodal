@@ -3,4 +3,6 @@ PROMT 1:
 I'm building a simple Image-to-Text web app with plain HTML, CSS and JavaScript (index.html, style.css, main.js). Create only the basic page: a title, a file input to select an image, an empty area for an image preview, a "Describe Image" button, and an empty area for the result. Don't add any JavaScript logic yet.
 PROMT 2:
 Now add JavaScript in main.js so that when the user selects an image with the file input, the image appears in the preview area. If no file is selected, show a message in the preview area. Explain briefly how you read the file in the browser.
+
+promt 3 :Now add user feedback in main.js. Show a message if the user clicks "Describe Image" without selecting an image. While waiting for Ollama, show "Analyzing image..." and disable the button. When the response arrives, show a success message. If the request fails (for example Ollama is not running), show a clear error message in the page. Keep the existing code working and briefly explain what you changed.
 TASK 2

@@ -66,3 +66,21 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.status-message {
+  margin: -12px 0 24px;
+  text-align: center;
+}
+
+.status-message.success {
+  color: #16803c;
+}
+
+.status-message.error {
+  color: #b42318;
+}
