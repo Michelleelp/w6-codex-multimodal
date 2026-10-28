@@ -88,6 +88,11 @@ describeButton.addEventListener("click", async () => {
     return;
   }
 
+  if (selectedSlots.length === 1) {
+    const unselectedSlot = imageSlots.find(({ input }) => !input.files[0]);
+    unselectedSlot.result.textContent = `No image selected for ${unselectedSlot.label}.`;
+  }
+
   describeButton.disabled = true;
   statusMessage.className = "status-message";
   let failedCount = 0;

@@ -14,4 +14,6 @@ Following your plan, update index.html and style.css so there are two image sect
 
 promt 3
 
-Now update main.js so that clicking "Describe Images" sends each selected image to Ollama (model llava, stream false) in a separate request, and shows each response in its own description area under Image 1 and Image 2. Reuse one function for the request instead of duplicating code, and process the images one after the other. Keep the loading and error messages working. 
+Now update main.js so that clicking "Describe Images" sends each selected image to Ollama in a separate request, and shows each response in its own description area under Image 1 and Image 2. Reuse one function for the request instead of duplicating code, and process the images one after the other. Keep the loading and error messages working. 
+Promt 4
+Now  where only one image is selected. If only Image 1 or only Image 2 is selected, describe just that image and show a clear message in the other section, such as "No image selected for Image 2". If neither image is selected, show an error message and do not call Ollama. 
