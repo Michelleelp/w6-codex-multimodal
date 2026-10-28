@@ -10,4 +10,8 @@ Promt 1
 I want to extend this app to work with two images. Before changing any code, explain how I should restructure index.html and main.js to handle two file inputs, two previews, and two separate descriptions, including the case where only one image is selected. Don't write code yet.
 
 Promt 2 
-Following your plan, update index.html and style.css so there are two image sections, "Image 1" and "Image 2", each with its own file input, preview area and description area. Keep one "Describe Images" button. Update main.js only so both previews work. Don't send anything to Ollama yet.
+Following your plan, update index.html and style.css so there are two image sections, "Image 1" and "Image 2", each with its own file input, preview area and description area. Keep one "Describe Images" button. Update main.js only so both previews work. 
+
+promt 3
+
+Now update main.js so that clicking "Describe Images" sends each selected image to Ollama (model llava, stream false) in a separate request, and shows each response in its own description area under Image 1 and Image 2. Reuse one function for the request instead of duplicating code, and process the images one after the other. Keep the loading and error messages working. 
