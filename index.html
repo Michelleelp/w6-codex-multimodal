@@ -11,18 +11,25 @@
     <main class="app">
       <h1>Image to Text</h1>
 
-      <section class="image-section" aria-labelledby="image-label">
-        <h2 id="image-label">Choose an image</h2>
-        <input id="image-input" type="file" accept="image/*" />
-        <div class="preview-area" aria-label="Image preview area"></div>
-      </section>
+      <div class="image-grid">
+        <section class="image-section" aria-labelledby="image-1-label">
+          <h2 id="image-1-label">Image 1</h2>
+          <input id="image-input-1" type="file" accept="image/*" aria-label="Choose Image 1" />
+          <div id="preview-1" class="preview-area" aria-label="Image 1 preview"></div>
+          <h3>Description</h3>
+          <div id="result-1" class="result-area" aria-label="Image 1 description"></div>
+        </section>
 
-      <button type="button">Describe Image</button>
+        <section class="image-section" aria-labelledby="image-2-label">
+          <h2 id="image-2-label">Image 2</h2>
+          <input id="image-input-2" type="file" accept="image/*" aria-label="Choose Image 2" />
+          <div id="preview-2" class="preview-area" aria-label="Image 2 preview"></div>
+          <h3>Description</h3>
+          <div id="result-2" class="result-area" aria-label="Image 2 description"></div>
+        </section>
+      </div>
 
-      <section class="result-section" aria-labelledby="result-label">
-        <h2 id="result-label">Description</h2>
-        <div class="result-area" aria-label="Description result area"></div>
-      </section>
+      <button type="button">Describe Images</button>
     </main>
   </body>
 </html>

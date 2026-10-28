@@ -12,7 +12,7 @@ body {
 }
 
 .app {
-  width: min(100%, 640px);
+  width: min(100%, 960px);
   margin: 0 auto;
   padding: 32px;
   border: 1px solid #e0e5ea;
@@ -31,9 +31,24 @@ h2 {
   font-size: 1rem;
 }
 
-.image-section,
-.result-section {
+h3 {
+  margin: 20px 0 12px;
+  font-size: 0.95rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
   margin-bottom: 24px;
+}
+
+.image-section {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #e0e5ea;
+  border-radius: 8px;
+  background: #fff;
 }
 
 input[type="file"] {
@@ -52,6 +67,7 @@ input[type="file"] {
 
 .result-area {
   min-height: 110px;
+  padding: 12px;
 }
 
 button {
@@ -67,20 +83,8 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
-  opacity: 0.65;
-  cursor: wait;
-}
-
-.status-message {
-  margin: -12px 0 24px;
-  text-align: center;
-}
-
-.status-message.success {
-  color: #16803c;
-}
-
-.status-message.error {
-  color: #b42318;
+@media (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
 }

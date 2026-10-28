@@ -6,3 +6,8 @@ Now add JavaScript in main.js so that when the user selects an image with the fi
 
 promt 3 :Now add user feedback in main.js. Show a message if the user clicks "Describe Image" without selecting an image. While waiting for Ollama, show "Analyzing image..." and disable the button. When the response arrives, show a success message. If the request fails (for example Ollama is not running), show a clear error message in the page. Keep the existing code working and briefly explain what you changed.
 TASK 2
+Promt 1
+I want to extend this app to work with two images. Before changing any code, explain how I should restructure index.html and main.js to handle two file inputs, two previews, and two separate descriptions, including the case where only one image is selected. Don't write code yet.
+
+Promt 2 
+Following your plan, update index.html and style.css so there are two image sections, "Image 1" and "Image 2", each with its own file input, preview area and description area. Keep one "Describe Images" button. Update main.js only so both previews work. Don't send anything to Ollama yet.
